@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- linguagem do site -->
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margem Felix</title>
+</head>
+
+<body> <!-- corpo do site -->
+
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .tamanho{
+
+        }
+
+        .forms{
+            display: flex;
+            flex-direction: column;
+            border: solid black;
+
+            margin-left: 750px;
+            margin-right: 750px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 10px;
+            gap: 5px;
+
+        }
+
+        .caixa{
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-weight: bold;
+        }
+
+        .btn1{
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .btn1:hover {
+            background-color: beige;
+            color: blue;
+        }
+
+        .btn2{
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .btn2:hover {
+            background-color: beige;
+            color: blue;
+        }
+
+    </style>
+
+<!-- divisão com as classes para CSS -->
+
+    <div class="container">
+        <img src="img/Felix.png" alt="gato" class="tamanho">
+
+        <div class="forms">
+            <h1>Cadastro do Clube Félix</h1>
+            <input type="text" id="nome" placeholder="Coloque seu nome" class="caixa">
+            <input type="text" id="email" placeholder="Seu e-mail" class="caixa">
+            <input type="text" id="fone" placeholder="Seu telefone" class="caixa">
+
+            <button type="button" id="Cadastrar" class="btn1">Cadastrar</button>
+            <button type="button" id="Enviar" class="btn2">Enviar</button>
+
+        </div>
+    </div>
+
+</body>
+</html>
